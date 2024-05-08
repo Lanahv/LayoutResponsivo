@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+   h1{
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #7134ff;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+
+  .flex-item-center {
+    background-color: rgb(48, 221, 71);
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
